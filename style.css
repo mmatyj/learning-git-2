@@ -15,7 +15,11 @@ h1 {
   text-transform: uppercase;
 }
 h3 {
+<<<<<<< HEAD
   font-size: 35px;
+=======
+  font-size: 30px;
+>>>>>>> devManiek
   color: #45FFD4;
 }
 p{
