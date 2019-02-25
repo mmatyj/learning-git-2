@@ -1,0 +1,13 @@
+body {
+  color: black;
+  background-color: pink;
+  text-align: center;
+}
+
+.test {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */
