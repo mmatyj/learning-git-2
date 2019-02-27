@@ -13,13 +13,13 @@
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
 
     "build": "npm-run-all build:* test",
-    "build:clean": "rimraf css/*.css",
+    "build:clean": "rimraf css/*",
     "build:sass": "node-sass --output-style compact -o css sass",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
 
     "watch": "npm-run-all build -p watch:*",
-    "watch:sassprefixer": "onchange sass/*.scss -- node-sass --output-style expanded --source-map true -o css sass && autoprefixer-cli -o main.prefixed.css main.css ",
+    "watch:sassprefixer": "onchange sass/*.scss -- node-sass --output-style expanded --source-map true -o css sass && autoprefixer-cli -o main.css ",
     "watch:browsersync": "browser-sync start --server --watch"
   },
   "repository": {
